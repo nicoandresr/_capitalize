@@ -7,7 +7,7 @@ Capitalize the first letter of a string, or all words in a string.
 Capitalize the first letter of a string:
 
 ```javascript
-var capitalize = require('capitalize')
+var capitalize = require('_capitalize')
 
 var test = require('tape')
 
@@ -46,7 +46,7 @@ test('Capitalize each word, ignoring quotes', function(t) {
 
 ## Install
 
-    npm install capitalize
+    npm install _capitalize
 
 ## License
 
