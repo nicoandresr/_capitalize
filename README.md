@@ -2,12 +2,16 @@
 
 Capitalize the first letter of a string, or all words in a string.
 
+## Install
+
+    npm install js-capitalize
+
 ## Synopsis
 
 Capitalize the first letter of a string:
 
 ```javascript
-var capitalize = require('js-capitalize')
+var capitalize = require('./') // you must import like **require('js-capitalize')**
 
 var test = require('tape')
 
@@ -44,9 +48,14 @@ test('Capitalize each word, ignoring quotes', function(t) {
 })
 ```
 
-## Install
+and thanks to [@marceuy](https://github.com/grncdr/js-capitalize/pull/7), Add support for strings with any original case:
 
-    npm install js-capitalize
+```javascript
+test('Capitalize upper case words', function(t) {
+    t.plan(1)
+    t.equal(capitalize("CONGRATULATIONS THIS IS A NICE TEST"), "Congratulations this is a nice test")
+})
+```
 
 ## License
 
