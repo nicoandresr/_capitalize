@@ -1,5 +1,5 @@
 {
-  "name": "_capitalize",
+  "name": "js-capitalize",
   "version": "1.0.0",
   "description": "capitalize the first letter of a string, or all words in a string",
   "main": "index.js",
@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nicoandresr/_capitalize.git"
+    "url": "git://github.com/nicoandresr/js-capitalize.git"
   },
   "bugs": {
     "type": "git",
-    "url": "git://github.com/nicoandresr/_capitalize/issues"
+    "url": "git://github.com/nicoandresr/js-capitalize/issues"
   },
-  "homepage": "https://github.com/nicoandresr/_capitalize",
+  "homepage": "https://github.com/nicoandresr/js-capitalize",
   "keywords": [
     "capitalize"
   ],
