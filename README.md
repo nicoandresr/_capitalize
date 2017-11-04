@@ -43,8 +43,8 @@ and thanks to [@ultraflynn](https://github.com/grncdr/js-capitalize/pull/3), cap
 
 ```javascript
 test('Capitalize each word, ignoring quotes', function(t) {
-    t.plan(1)
-    t.equal(capitalize.words("it's a nice day"), "It's A Nice Day")
+  t.plan(1)
+  t.equal(capitalize.words("it's a nice day"), "It's A Nice Day")
 })
 ```
 
@@ -52,8 +52,19 @@ and thanks to [@marceuy](https://github.com/grncdr/js-capitalize/pull/7), Add su
 
 ```javascript
 test('Capitalize upper case words', function(t) {
-    t.plan(1)
-    t.equal(capitalize("CONGRATULATIONS THIS IS A NICE TEST"), "Congratulations this is a nice test")
+  t.plan(1)
+  t.equal(capitalize("CONGRATULATIONS THIS IS A NICE TEST"), "Congratulations this is a nice test")
+})
+```
+
+Fix bug when the value to capitalize is undefinded or a number:
+
+```javascript
+test('Supports an undefined or number value', t => {
+  t.plan(3)
+  t.equal(capitalize(null), "")
+  t.equal(capitalize(undefined), "")
+  t.equal(capitalize(123), "123")
 })
 ```
 
