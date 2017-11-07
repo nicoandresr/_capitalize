@@ -1,4 +1,6 @@
-const getLowerCaseString = string => (string || '').toString().toLowerCase();
+function getLowerCaseString(string) {
+  return (string || '').toString().toLowerCase();
+}
 
 module.exports = function (string) {
   string = getLowerCaseString(string);
